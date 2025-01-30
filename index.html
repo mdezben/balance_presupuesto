@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Ingresos y Gastos</title>
+    <link rel="stylesheet" href="presupuesto.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Ingresos y Gastos</h1>
+
+        <div class="form">
+            <input type="text" id="descripcion" placeholder="Descripción">
+            <input type="number" id="monto" placeholder="Monto" min="0">
+            <button id="btnIngreso" class="ingreso">Agregar Ingreso</button>
+            <button id="btnGasto" class="gasto">Agregar Gasto</button>
+        </div>
+
+        <h2 id="balance">Balance Total: $0.00</h2>
+
+        <h3>Historial de Transacciones</h3>
+        <div id="transacciones" class="lista-transacciones"></div>
+    </div>
+
+    <script src="js/presupuesto.js"></script>
+</body>
+</html>
+
